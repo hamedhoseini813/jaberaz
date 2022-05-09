@@ -1,0 +1,16 @@
+{% extends 'app1/base/index.html' %}
+<!DOCTYPE html>
+
+    {% block title %}blog{% endblock %}
+    {% block body %}
+    
+        {% for item in page_obj %}
+            {{ item }} : {{ item.body }} 
+        {% endfor %}
+    
+    {% endblock body %}
+
+
+        
+    
+</html>
